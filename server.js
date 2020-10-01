@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
   res.send("Hey! This is working !");
 });
 app.post("/login", login);
-// app.get("/userBasedFunc", fbAuth, userBasedFunc);
+app.get("/userBasedFunc", fbAuth, userBasedFunc);
 
 app.listen(PORT, () => {
   console.log(`server running at port ${PORT}`);
